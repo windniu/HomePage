@@ -17,5 +17,9 @@
 			<link rel="stylesheet" href="{{ site.baseurl }}/css/style-xlarge.css" />
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!-- Tracking -->
+		{% if site.google_analytics and jekyll.environment == 'production' %}
+		{% include analytics.html %}
+		{% endif %}
 	</head>
 		
