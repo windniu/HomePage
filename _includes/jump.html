@@ -1,0 +1,25 @@
+<html>
+<body>
+  <h2>Jinghao Niu, a PhD student at Institute of Automation Chinese Academy of Sciences.</h2>
+  <p>jumping to <a href="https://windniu.github.io/">Jinghao's HomePage</a> in <span id="mySecond">3</span> seconds</p>
+  
+ 
+  <script type="text/javascript">  
+ 
+    var num=3;
+    function count(){
+        document.getElementById("mySecond").innerHTML = num;
+        num--;
+        setTimeout("count()",1000);
+        if(num==1){
+            window.location.assign("https://windniu.github.io/");
+        }
+    }
+    setTimeout("count()",1000);
+    
+   function goBack(){
+        window.history.back();
+   }
+ </script> 
+</body>
+</html>
